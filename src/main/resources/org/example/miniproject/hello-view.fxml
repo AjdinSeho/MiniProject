@@ -4,15 +4,28 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="765.0" prefWidth="836.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1">
-   <children>
-      <Label layoutX="62.0" layoutY="27.0" prefHeight="129.0" prefWidth="139.0" text="         QUERY" textAlignment="CENTER">
-         <font>
-            <Font size="22.0" />
-         </font>
-      </Label>
-      <ChoiceBox layoutX="187.0" layoutY="79.0" prefWidth="150.0" />
-      <TextField layoutX="337.0" layoutY="62.0" prefHeight="59.0" prefWidth="418.0" />
-   </children>
+<AnchorPane prefHeight="562.0" prefWidth="896.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.miniproject.HelloController">
+    <children>
+        <Label fx:id="welcomeText" layoutX="14.0" layoutY="27.0" prefHeight="129.0" prefWidth="200.0" text="QUERY" textAlignment="CENTER">
+            <font>
+                <Font size="22.0" />
+            </font>
+        </Label>
+        <ChoiceBox fx:id="queryBox" layoutX="139.0" layoutY="79.0" prefWidth="150.0" />
+        <TextField fx:id="queryField" layoutX="289.0" layoutY="66.0" onAction="#onTextFieldEnter" prefHeight="51.0" prefWidth="342.0" />
+      <TableView fx:id="table" layoutX="34.0" layoutY="149.0" prefHeight="272.0" prefWidth="563.0">
+          <columns>
+              <TableColumn fx:id="colUserId" text="user_id" />
+              <TableColumn fx:id="colFirstName" text="first_name" />
+              <TableColumn fx:id="colLastName" prefWidth="75.0" text="last_name" />
+              <TableColumn fx:id="colAddress" prefWidth="85.0" text="address" />
+              <TableColumn fx:id="colZip" text="zip" />
+              <TableColumn fx:id="colUsername" text="username" />
+              <TableColumn fx:id="colPassword" text="password" />
+          </columns>
+      </TableView>
+      <Label layoutX="596.0" layoutY="208.0" text="EXAMPLE UPDATE:  first_name='John', last_name='Doe' WHERE user_id=5 " />
+      <Label layoutX="597.0" layoutY="225.0" text="EXMAPLE DELETE: WHERE user_id =5" />
+      <Label layoutX="596.0" layoutY="191.0" text="EXMAPLE SELECT: WHERE user_id = 5" />
+    </children>
 </AnchorPane>
