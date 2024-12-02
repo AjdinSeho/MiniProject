@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="765.0" prefWidth="836.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="62.0" layoutY="27.0" prefHeight="129.0" prefWidth="139.0" text="         QUERY" textAlignment="CENTER">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <ChoiceBox layoutX="187.0" layoutY="79.0" prefWidth="150.0" />
+      <TextField layoutX="337.0" layoutY="62.0" prefHeight="59.0" prefWidth="418.0" />
+   </children>
+</AnchorPane>
